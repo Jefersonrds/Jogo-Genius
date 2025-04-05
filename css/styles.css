@@ -94,6 +94,22 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 5rem;
+	position: relative;
+}
+
+.game__title{
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin: 0;
+	padding-left: 1.2rem;
+	padding-top: 4.7rem;
+}
+
+.reg{
+	font-family: verdana, sans-serif;
+	font-size: 1.8rem;
+	margin-left: -1rem;
+	vertical-align: top;
 }
 
 /**********************************/
@@ -103,6 +119,8 @@ body {
 .game__pad {
 	width: calc(var(--game-size) / 2);
 	height: calc(var(--game-size) / 2);
+	border-color: var(--clr-border);
+
 }
 
 .game__pad--tl {
@@ -143,6 +161,9 @@ body {
 
 }
 
+.game__pad--center{
+	background-color: var(--clr-center);
+}
 
 .game__pad--btn {
 	cursor: pointer;
@@ -150,6 +171,24 @@ body {
 /**********************************/
 /* 3.2 Center
 /**********************************/
+
+.game__options{
+	position: absolute;
+	background-color: var(--clr-center);
+
+	width: calc(var(--game-size)/2);
+	height: calc(var(--game-size)/2);
+
+	top: calc(var(--game-size)/4);
+	left: calc(var(--game-size)/4);
+
+	border: var(--game-border);
+	border-radius: 25rem;
+}
+
+
+
+
 
 /**********************************/
 /* 3.2.1 GUI
